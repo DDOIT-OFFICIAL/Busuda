@@ -20,8 +20,11 @@ const HeroSection = ({ scrollToCalculator }: HeroSectionProps) => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6 fade-in-up">
-            부동산 중개수수료, <br />
-            <span className="text-primary">반값으로 줄이고</span> 안전은 그대로
+                         <span>
+               <span className="text-6xl md:text-7xl text-primary">부</span><span className="text-6xl md:text-7xl text-black">동산</span>{" "}
+               <span className="text-6xl md:text-7xl text-primary">수</span><span className="text-6xl md:text-7xl text-black">수료</span>{" "}
+               <span className="text-6xl md:text-7xl text-primary">다</span><span className="text-6xl md:text-7xl text-black">이어트</span>
+             </span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 fade-in-up delay-1">
             직거래는 불안하고, 중개는 비싸다고요? <br />
