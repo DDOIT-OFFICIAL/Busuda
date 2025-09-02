@@ -8,7 +8,7 @@ const TestimonialSection = () => {
       age: "32세",
       area: "서울 강남구",
       type: "전세 계약",
-      content: "당근에서 만난 분과 계약하려니 막막했는데, 바로집 덕분에 수수료도 아끼고 안심하고 계약했어요. 공인중개사님이 꼼꼼히 체크해주셔서 정말 만족스러워요!",
+      content: "당근에서 만난 분과 계약하려니 막막했는데, 부수다 덕분에 수수료도 아끼고 안심하고 계약했어요. 공인중개사님이 꼼꼼히 체크해주셔서 정말 만족스러워요!",
       savings: "85만원 절약",
       rating: 5
     },
@@ -26,7 +26,7 @@ const TestimonialSection = () => {
       age: "35세", 
       area: "인천 연수구",
       type: "전세 계약",
-      content: "직거래로 진행하다가 불안해서 바로집으로 바꿨어요. 매물 검증부터 계약까지 모든 과정이 투명하고 전문적이에요. 앱으로 실시간 확인도 가능해서 편해요.",
+      content: "직거래로 진행하다가 불안해서 부수다로 바꿨어요. 매물 검증부터 계약까지 모든 과정이 투명하고 전문적이에요. 앱으로 실시간 확인도 가능해서 편해요.",
       savings: "75만원 절약",
       rating: 5
     }
@@ -40,7 +40,7 @@ const TestimonialSection = () => {
             <span className="text-primary">실제 고객</span> 이용 후기
           </h2>
           <p className="text-xl text-muted-foreground">
-            이미 수많은 분들이 바로집으로 안전하고 저렴하게 계약하고 있어요
+            이미 수많은 분들이 부수다로 안전하고 저렴하게 계약하고 있어요
           </p>
         </div>
 
@@ -89,11 +89,7 @@ const TestimonialSection = () => {
 
         {/* 통계 정보 */}
         <div className="mt-16 bg-white rounded-2xl p-8 border border-primary/20">
-          <div className="grid md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-3xl font-bold text-primary mb-2">1,200+</div>
-              <div className="text-sm text-muted-foreground">누적 계약 건수</div>
-            </div>
+          <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
               <div className="text-3xl font-bold text-green-600 mb-2">평균 95만원</div>
               <div className="text-sm text-muted-foreground">고객 절약 금액</div>
