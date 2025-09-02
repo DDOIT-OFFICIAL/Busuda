@@ -115,7 +115,7 @@ const CalculatorSection = () => {
             {showResult && (
               <div className="bg-primary/5 rounded-xl p-4 border border-primary/20">
                 <h3 className="text-xl font-bold text-primary text-center mb-4">
-                  부수다에서는 {getSavings().toLocaleString()}원 아낄 수 있어요!
+                  부수다에서는 {getSavings().toLocaleString()}원을 절약할 수 있습니다!
                 </h3>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="text-center">
@@ -136,7 +136,7 @@ const CalculatorSection = () => {
                     계산된 비용으로 안전 계약하기
                   </Button>
                   <p className="text-sm text-muted-foreground mt-2">
-                    💡 1분 신청으로 베테랑 공인중개사 배정
+                    1분 신청으로 베테랑 공인중개사를 배정해드립니다
                   </p>
                 </div>
               </div>

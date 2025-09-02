@@ -27,8 +27,8 @@ const HeroSection = ({ scrollToCalculator }: HeroSectionProps) => {
              </span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 fade-in-up delay-1">
-            직거래는 불안하고, 중개는 비싸다고요? <br />
-            <span className="font-semibold text-foreground">부수다가 정답입니다.</span>
+            직거래는 불안하고, 중개는 비용 부담이 크시나요? <br />
+            <span className="font-semibold text-foreground">부수다가 해결책입니다.</span>
           </p>
           
           {/* 핵심 가치 시각화 */}
@@ -78,7 +78,7 @@ const HeroSection = ({ scrollToCalculator }: HeroSectionProps) => {
           </div>
           
           <p className="text-sm text-muted-foreground mt-4 fade-in-up delay-4">
-            💡 서울 아파트 평균 전세가 기준, 최대 120만원까지 절약 가능
+            서울 아파트 평균 전세가 기준, 최대 120만원까지 절약 가능합니다.
           </p>
         </div>
       </div>

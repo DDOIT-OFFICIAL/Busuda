@@ -10,7 +10,7 @@ const ProblemSection = () => {
             집에 압류가 걸려있진 않을까?"
           </h2>
           <p className="text-lg text-muted-foreground">
-            직거래, 이런 걱정 때문에 망설이셨죠?
+            직거래, 이런 걱정 때문에 망설이고 계신가요?
           </p>
         </div>
         
@@ -22,7 +22,7 @@ const ProblemSection = () => {
             <h3 className="text-lg font-bold text-red-700 mb-3">은행 대출 거절</h3>
             <p className="text-sm text-red-600">
               "직거래 계약서로는 <br />
-              대출 승인이 어려워요"
+              대출 승인이 어렵습니다"
             </p>
           </div>
           
@@ -32,8 +32,8 @@ const ProblemSection = () => {
             </div>
             <h3 className="text-lg font-bold text-orange-700 mb-3">보증보험 불가</h3>
             <p className="text-sm text-orange-600">
-              "전세보증금 보장받을 수 <br />
-              있는 방법이 없네요"
+              "전세보증금을 보장받을 <br />
+              방법이 없습니다"
             </p>
           </div>
           
@@ -43,8 +43,8 @@ const ProblemSection = () => {
             </div>
             <h3 className="text-lg font-bold text-red-700 mb-3">분쟁 시 문제</h3>
             <p className="text-sm text-red-600">
-              "계약서에 문제 생기면 <br />
-              누가 책임져주나요?"
+              "계약서에 문제가 생기면 <br />
+              누가 책임집니까?"
             </p>
           </div>
         </div>
@@ -52,21 +52,18 @@ const ProblemSection = () => {
         <div className="text-center mb-6">
           <div className="bg-gray-100 rounded-2xl p-4">
             <p className="text-lg font-semibold text-gray-700">
-              😰 결국 다시 중개사 방문 → 풀 수수료 지불
+              결국 다시 중개사 방문 → 풀 수수료 지불
             </p>
             <p className="text-base text-gray-600 mt-1">
-              "처음부터 중개사에게 맡길걸..."
+              "처음부터 중개사에게 맡겼어야 했습니다"
             </p>
           </div>
         </div>
 
         <div className="text-center">
           <div className="bg-gradient-to-r from-primary/10 to-blue-500/10 rounded-2xl p-6 border border-primary/30">
-            <div className="mb-3">
-              <span className="text-2xl">🎯</span>
-            </div>
             <h3 className="text-xl md:text-2xl font-bold text-primary mb-4">
-              부수다라면?
+              부수다의 해결책
             </h3>
             <div className="grid md:grid-cols-2 gap-4 text-left">
               <div className="flex items-center space-x-2">
