@@ -8,7 +8,8 @@
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && robocopy dist . /E /XD .git node_modules && git add . && git commit -m \"Manual deploy\" && git push origin master"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
