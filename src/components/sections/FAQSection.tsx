@@ -70,7 +70,11 @@ const FAQSection = () => {
               더 궁금한 점이 있으시거나 개인 상황에 맞는 상담이 필요하세요?
             </p>
           </div>
-          <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 py-3">
+          <Button 
+            size="lg" 
+            className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 py-3"
+            onClick={() => window.open('https://walla.my/v/l7SVKwpsGjQMUue10hcm', '_blank')}
+          >
             더 궁금한 점 1:1 문의하기
           </Button>
           <p className="text-sm text-muted-foreground mt-3">

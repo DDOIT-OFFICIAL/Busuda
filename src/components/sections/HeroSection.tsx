@@ -67,7 +67,12 @@ const HeroSection = ({ scrollToCalculator }: HeroSectionProps) => {
             >
               내가 아낄 수 있는 수수료, 지금 바로 확인
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-primary text-primary hover:bg-primary/5">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="text-lg px-8 py-4 border-primary text-primary hover:bg-primary/5"
+              onClick={() => window.open('https://walla.my/v/l7SVKwpsGjQMUue10hcm', '_blank')}
+            >
               1분만에 무료 상담 신청
             </Button>
           </div>
