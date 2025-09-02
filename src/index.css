@@ -281,26 +281,29 @@ All colors MUST be HSL.
     box-sizing: border-box;
   }
 
-  /* Top Navigation */
+  /* Top Navigation - Box Style */
   .top-navigation {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 100;
+    width: auto;
+    max-width: calc(100vw - 2rem);
     background: hsl(var(--background) / 0.95);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid hsl(var(--border) / 0.3);
-    padding: 0.75rem 0;
+    backdrop-filter: blur(20px);
+    border: 1px solid hsl(var(--border) / 0.5);
+    border-radius: 2rem;
+    padding: 0.75rem 1.5rem;
+    box-shadow: 0 8px 32px -8px hsl(var(--primary) / 0.1);
   }
 
   .nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 2rem;
+    gap: 2rem;
+    min-width: 0;
   }
 
   .nav-logo {
@@ -350,13 +353,14 @@ All colors MUST be HSL.
   .nav-item.active::after {
     content: '';
     position: absolute;
-    bottom: -0.75rem;
+    bottom: -0.5rem;
     left: 50%;
     transform: translateX(-50%);
-    width: 0.5rem;
-    height: 0.5rem;
+    width: 0.375rem;
+    height: 0.375rem;
     background-color: hsl(var(--primary));
     border-radius: 50%;
+    box-shadow: 0 2px 8px hsl(var(--primary) / 0.3);
   }
 
   /* Process Section Animations */
@@ -468,8 +472,15 @@ All colors MUST be HSL.
       transform: translateY(-2px) scale(1.01);
     }
 
+    .top-navigation {
+      top: 0.75rem;
+      padding: 0.5rem 1rem;
+      max-width: calc(100vw - 1.5rem);
+      border-radius: 1.5rem;
+    }
+
     .nav-container {
-      padding: 0 1rem;
+      gap: 1.5rem;
     }
 
     .nav-menu {
@@ -495,6 +506,17 @@ All colors MUST be HSL.
   }
 
   @media (max-width: 640px) {
+    .top-navigation {
+      top: 0.5rem;
+      padding: 0.375rem 0.75rem;
+      max-width: calc(100vw - 1rem);
+      border-radius: 1.25rem;
+    }
+
+    .nav-container {
+      gap: 1rem;
+    }
+
     .nav-menu {
       gap: 0.75rem;
     }
@@ -504,8 +526,8 @@ All colors MUST be HSL.
       padding: 0.25rem 0.5rem;
     }
 
-    .nav-container {
-      padding: 0 0.75rem;
+    .nav-logo {
+      font-size: 1.125rem;
     }
   }
 
