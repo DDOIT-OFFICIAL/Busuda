@@ -359,7 +359,7 @@ const ProcessSection = ({ onNavigateToSection }: ProcessSectionProps) => {
   }, [currentStep, isScrolling, processes.length, onNavigateToSection]);
 
   return (
-    <section ref={sectionRef} className="h-full w-full relative overflow-y-auto overflow-x-hidden bg-background">
+    <section ref={sectionRef} className="h-full w-full relative overflow-y-auto overflow-x-hidden bg-background pt-8 pb-32 sm:pt-8 sm:pb-32 md:pt-8 md:pb-32 lg:pt-8 lg:pb-32">
       {/* 배경 장식 */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary/5 rounded-full blur-3xl floating-bg"></div>

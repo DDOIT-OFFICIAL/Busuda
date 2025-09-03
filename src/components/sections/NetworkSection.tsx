@@ -21,7 +21,7 @@ const NetworkSection = () => {
   ];
 
   return (
-    <section className="h-full flex items-start justify-center py-8 px-4 bg-background pt-8 pb-24">
+    <section className="h-full flex items-start justify-center py-8 px-4 bg-background pt-8 pb-32 sm:pt-8 sm:pb-32 md:pt-8 md:pb-32 lg:pt-8 lg:pb-32">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 sm:mb-6">
           <span className="text-primary">전문 공인중개사</span>와 함께하는 안전한 거래

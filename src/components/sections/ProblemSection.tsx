@@ -2,7 +2,7 @@ import { AlertTriangle, Home, CreditCard, FileX } from "lucide-react";
 
 const ProblemSection = () => {
   return (
-    <section className="h-full flex items-start justify-center py-4 px-4 bg-background pt-8 pb-24">
+    <section className="h-full flex items-start justify-center py-4 px-4 bg-background pt-8 pb-32 sm:pt-8 sm:pb-32 md:pt-8 md:pb-32 lg:pt-8 lg:pb-32">
       <div className="max-w-6xl mx-auto w-full">
         <div className="text-center mb-6 sm:mb-8">
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-3 sm:mb-4">

@@ -33,7 +33,7 @@ const TestimonialSection = () => {
   ];
 
   return (
-    <section className="h-full flex items-start justify-center py-8 px-4 bg-background pt-8 pb-24">
+    <section className="h-full flex items-start justify-center py-8 px-4 bg-background pt-8 pb-32 sm:pt-8 sm:pb-32 md:pt-8 md:pb-32 lg:pt-8 lg:pb-32">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-8 sm:mb-12 md:mb-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 sm:mb-6">
