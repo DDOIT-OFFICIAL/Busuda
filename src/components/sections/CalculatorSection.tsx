@@ -325,13 +325,13 @@ const CalculatorSection = () => {
 
   return (
     <TooltipProvider>
-      <section className="h-full flex items-start justify-center py-4 px-4 bg-background overflow-y-auto">
+      <section className="h-full flex items-start justify-center py-4 px-4 bg-background pt-8 pb-24">
         <div className="max-w-7xl mx-auto w-full">
           <div className="text-center mb-4">
-            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-2">
               한국 공인중개사 수수료 계산기
             </h2>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-xs sm:text-sm text-muted-foreground">
               법정 상한요율과 구간별 한도를 반영한 정확한 계산
             </p>
           </div>
@@ -342,7 +342,7 @@ const CalculatorSection = () => {
               <CardContent className="space-y-4">
               {/* 지역 선택 */}
               <div>
-                <Label className="text-base font-semibold text-foreground mb-2 block">지역</Label>
+                <Label className="text-sm sm:text-base font-semibold text-foreground mb-2 block">지역</Label>
                 <Select value={region} onValueChange={(value) => setRegion(value as Region)}>
                   <SelectTrigger className="w-full">
                     <SelectValue placeholder="지역을 선택하세요" />
@@ -359,7 +359,7 @@ const CalculatorSection = () => {
 
               {/* 거래 유형 */}
               <div>
-                <Label className="text-base font-semibold text-foreground mb-2 block">거래 유형</Label>
+                <Label className="text-sm sm:text-base font-semibold text-foreground mb-2 block">거래 유형</Label>
                 <div className="flex flex-wrap gap-3">
                   {dealTypes.map((type) => (
                     <Button
@@ -376,7 +376,7 @@ const CalculatorSection = () => {
 
               {/* 매물 유형 */}
               <div>
-                <Label className="text-base font-semibold text-foreground mb-2 block">매물 유형</Label>
+                <Label className="text-sm sm:text-base font-semibold text-foreground mb-2 block">매물 유형</Label>
                 <div className="flex flex-wrap gap-3">
                   {propertyTypes.map((type) => (
                     <div key={type} className="flex items-center gap-2">
@@ -416,7 +416,7 @@ const CalculatorSection = () => {
               {dealType === "월세" ? (
                 <div className="space-y-4">
                   <div>
-                    <Label className="text-base font-semibold text-foreground mb-2 block">보증금</Label>
+                    <Label className="text-sm sm:text-base font-semibold text-foreground mb-2 block">보증금</Label>
                     <div className="relative">
                       <Input
                         type="text"
@@ -431,7 +431,7 @@ const CalculatorSection = () => {
                     </div>
                   </div>
                   <div>
-                    <Label className="text-base font-semibold text-foreground mb-2 block">월세</Label>
+                    <Label className="text-sm sm:text-base font-semibold text-foreground mb-2 block">월세</Label>
                     <div className="relative">
                       <Input
                         type="text"
@@ -448,7 +448,7 @@ const CalculatorSection = () => {
                 </div>
               ) : (
                 <div>
-                  <Label className="text-base font-semibold text-foreground mb-2 block">거래 금액</Label>
+                  <Label className="text-sm sm:text-base font-semibold text-foreground mb-2 block">거래 금액</Label>
                   <div className="relative">
                     <Input
                       type="text"
@@ -466,7 +466,7 @@ const CalculatorSection = () => {
 
               {/* 협의요율 입력 */}
               <div>
-                <Label className="text-base font-semibold text-foreground mb-2 block">
+                <Label className="text-sm sm:text-base font-semibold text-foreground mb-2 block">
                   협의요율 (선택사항)
                 </Label>
                 <div className="relative">
@@ -482,7 +482,7 @@ const CalculatorSection = () => {
                     %
                   </span>
                 </div>
-                <p className="text-sm text-muted-foreground mt-2">
+                <p className="text-xs sm:text-sm text-muted-foreground mt-2">
                   협의요율을 입력하지 않으면 법정 상한요율이 적용됩니다
                 </p>
               </div>

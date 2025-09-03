@@ -33,46 +33,46 @@ const TestimonialSection = () => {
   ];
 
   return (
-    <section className="h-full flex items-center justify-center py-8 px-4 bg-secondary/20">
+    <section className="h-full flex items-start justify-center py-8 px-4 bg-background pt-8 pb-24">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+        <div className="text-center mb-8 sm:mb-12 md:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 sm:mb-6">
             <span className="text-primary">실제 고객</span> 이용 후기
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground">
             이미 수많은 분들이 부수다로 안전하고 저렴하게 계약하고 있습니다
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="hover-lift bg-white border border-gray-100 relative overflow-hidden">
-              <CardContent className="p-6">
+              <CardContent className="p-4 sm:p-6">
                 {/* 별점 */}
-                <div className="flex items-center mb-4">
+                <div className="flex items-center mb-3 sm:mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                    <Star key={i} className="w-3 h-3 sm:w-4 sm:h-4 fill-yellow-400 text-yellow-400" />
                   ))}
                 </div>
 
                 {/* 인용 아이콘 */}
-                <Quote className="w-8 h-8 text-primary/30 mb-4" />
+                <Quote className="w-6 h-6 sm:w-8 sm:h-8 text-primary/30 mb-3 sm:mb-4" />
                 
                 {/* 후기 내용 */}
-                <p className="text-gray-700 leading-relaxed mb-6 text-sm">
+                <p className="text-gray-700 leading-relaxed mb-4 sm:mb-6 text-xs sm:text-sm">
                   "{testimonial.content}"
                 </p>
 
                 {/* 절약 금액 강조 */}
-                <div className="bg-green-50 rounded-lg p-3 mb-4 border border-green-200">
-                  <p className="text-green-700 font-bold text-center">
+                <div className="bg-green-50 rounded-lg p-2 sm:p-3 mb-3 sm:mb-4 border border-green-200">
+                  <p className="text-green-700 font-bold text-center text-xs sm:text-sm">
                     {testimonial.savings}
                   </p>
                 </div>
 
                 {/* 고객 정보 */}
-                <div className="border-t pt-4">
-                  <div className="flex justify-between items-center text-sm text-muted-foreground">
+                <div className="border-t pt-3 sm:pt-4">
+                  <div className="flex justify-between items-center text-xs sm:text-sm text-muted-foreground">
                     <div>
                       <p className="font-semibold text-foreground">{testimonial.name}</p>
                       <p>{testimonial.age} • {testimonial.area}</p>
@@ -88,19 +88,19 @@ const TestimonialSection = () => {
         </div>
 
         {/* 통계 정보 */}
-        <div className="mt-16 bg-white rounded-2xl p-8 border border-primary/20">
-          <div className="grid md:grid-cols-3 gap-8 text-center">
+        <div className="mt-8 sm:mt-12 md:mt-16 bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 border border-primary/20">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 md:gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold text-green-600 mb-2">평균 95만원</div>
-              <div className="text-sm text-muted-foreground">고객 절약 금액</div>
+              <div className="text-xl sm:text-2xl md:text-3xl font-bold text-green-600 mb-1 sm:mb-2">평균 95만원</div>
+              <div className="text-xs sm:text-sm text-muted-foreground">고객 절약 금액</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-blue-600 mb-2">98%</div>
-              <div className="text-sm text-muted-foreground">고객 만족도</div>
+              <div className="text-xl sm:text-2xl md:text-3xl font-bold text-blue-600 mb-1 sm:mb-2">98%</div>
+              <div className="text-xs sm:text-sm text-muted-foreground">고객 만족도</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-purple-600 mb-2">3일</div>
-              <div className="text-sm text-muted-foreground">평균 처리 시간</div>
+              <div className="text-xl sm:text-2xl md:text-3xl font-bold text-purple-600 mb-1 sm:mb-2">3일</div>
+              <div className="text-xs sm:text-sm text-muted-foreground">평균 처리 시간</div>
             </div>
           </div>
         </div>

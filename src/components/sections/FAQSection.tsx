@@ -8,7 +8,7 @@ const FAQSection = () => {
 
   const faqs = [
     {
-      question: "바로집 서비스는 어떻게 이용하나요?",
+      question: "부수다 서비스는 어떻게 이용하나요?",
       answer: "앱에서 회원가입 후 매물 정보를 입력하시면, 해당 지역 공인중개사가 배정되어 매물 검증부터 계약까지 도와드립니다."
     },
     {
@@ -26,15 +26,15 @@ const FAQSection = () => {
   ];
 
   return (
-    <section className="h-full flex items-center justify-center py-4 px-4 bg-secondary/20 overflow-y-auto">
+    <section className="h-full flex items-start justify-center py-4 px-4 bg-background pt-8 pb-24">
       <div className="max-w-4xl mx-auto w-full">
-        <div className="text-center mb-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+        <div className="text-center mb-6 sm:mb-8">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 sm:mb-4">
             자주 묻는 질문
           </h2>
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-3 sm:space-y-4">
           {faqs.map((faq, index) => (
             <Card
               key={index}
@@ -43,19 +43,19 @@ const FAQSection = () => {
               }`}
               onClick={() => setOpenIndex(openIndex === index ? null : index)}
             >
-              <CardHeader className="pb-4">
+              <CardHeader className="pb-3 sm:pb-4 p-4 sm:p-6">
                 <CardTitle className="flex items-center justify-between text-left">
-                  <span className="text-lg">{faq.question}</span>
+                  <span className="text-sm sm:text-base md:text-lg pr-2">{faq.question}</span>
                   {openIndex === index ? (
-                    <ChevronUp className="w-5 h-5 text-primary" />
+                    <ChevronUp className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0" />
                   ) : (
-                    <ChevronDown className="w-5 h-5 text-muted-foreground" />
+                    <ChevronDown className="w-4 h-4 sm:w-5 sm:h-5 text-muted-foreground flex-shrink-0" />
                   )}
                 </CardTitle>
               </CardHeader>
               {openIndex === index && (
-                <CardContent className="pt-0">
-                  <p className="text-muted-foreground leading-relaxed">
+                <CardContent className="pt-0 p-4 sm:p-6">
+                  <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
                     {faq.answer}
                   </p>
                 </CardContent>
@@ -64,20 +64,20 @@ const FAQSection = () => {
           ))}
         </div>
 
-        <div className="text-center mt-8">
-          <div className="bg-primary/5 rounded-2xl p-4 border border-primary/20 mb-4">
-            <p className="text-base text-muted-foreground">
+        <div className="text-center mt-6 sm:mt-8">
+          <div className="bg-primary/5 rounded-xl sm:rounded-2xl p-3 sm:p-4 border border-primary/20 mb-3 sm:mb-4">
+            <p className="text-sm sm:text-base text-muted-foreground">
               더 궁금한 점이 있으시거나 개인 상황에 맞는 상담이 필요하세요?
             </p>
           </div>
           <Button 
             size="lg" 
-            className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 py-3"
+            className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base"
             onClick={() => window.open('https://walla.my/v/l7SVKwpsGjQMUue10hcm', '_blank')}
           >
             더 궁금한 점 1:1 문의하기
           </Button>
-          <p className="text-sm text-muted-foreground mt-3">
+          <p className="text-xs sm:text-sm text-muted-foreground mt-2 sm:mt-3">
             📞 평일 9시-18시 실시간 상담 가능
           </p>
         </div>

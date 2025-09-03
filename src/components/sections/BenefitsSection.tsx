@@ -41,27 +41,27 @@ const BenefitsSection = () => {
   ];
 
   return (
-    <section className="h-full flex items-center justify-center py-8 px-4 bg-secondary/20">
+    <section className="h-full flex items-start justify-center py-8 px-4 bg-background pt-8 pb-24">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 sm:mb-6">
             부수다만의 <span className="text-primary">3가지 보장</span>
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
           {benefits.map((benefit, index) => (
-            <div key={index} className="text-center hover-lift bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
-              <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center shadow-lg">
-                <benefit.icon className="w-10 h-10 text-primary-foreground" />
+            <div key={index} className="text-center hover-lift bg-white rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-100">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-4 sm:mb-6 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center shadow-lg">
+                <benefit.icon className="w-8 h-8 sm:w-10 sm:h-10 text-primary-foreground" />
               </div>
-              <div className="bg-primary/10 rounded-full px-4 py-1 inline-block mb-4">
-                <span className="text-primary font-semibold text-sm">{benefit.highlight}</span>
+              <div className="bg-primary/10 rounded-full px-3 sm:px-4 py-1 inline-block mb-3 sm:mb-4">
+                <span className="text-primary font-semibold text-xs sm:text-sm">{benefit.highlight}</span>
               </div>
-              <h3 className="text-2xl font-bold text-foreground mb-4">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-foreground mb-3 sm:mb-4">
                 {benefit.title}
               </h3>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed">
                 {benefit.description}
               </p>
             </div>
@@ -69,18 +69,18 @@ const BenefitsSection = () => {
         </div>
 
         {/* 신뢰 지표 */}
-        <div className="bg-white rounded-2xl p-8 border border-primary/20">
-          <h3 className="text-2xl font-bold text-center text-foreground mb-8">
+        <div className="bg-white rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-primary/20">
+          <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-center text-foreground mb-6 sm:mb-8">
             🏆 바로집 신뢰 지표
           </h3>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
             {trustIndicators.map((indicator, index) => (
               <div key={index} className="text-center">
-                <div className="w-12 h-12 mx-auto mb-3 bg-primary/10 rounded-full flex items-center justify-center">
-                  <indicator.icon className="w-6 h-6 text-primary" />
+                <div className="w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-2 sm:mb-3 bg-primary/10 rounded-full flex items-center justify-center">
+                  <indicator.icon className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                 </div>
-                <p className="text-sm text-muted-foreground mb-1">{indicator.label}</p>
-                <p className="text-xl font-bold text-primary">{indicator.value}</p>
+                <p className="text-xs sm:text-sm text-muted-foreground mb-1">{indicator.label}</p>
+                <p className="text-lg sm:text-xl font-bold text-primary">{indicator.value}</p>
               </div>
             ))}
           </div>

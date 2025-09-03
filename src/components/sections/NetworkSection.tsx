@@ -21,37 +21,37 @@ const NetworkSection = () => {
   ];
 
   return (
-    <section className="h-full flex items-center justify-center py-8 px-4 bg-secondary/20">
+    <section className="h-full flex items-start justify-center py-8 px-4 bg-background pt-8 pb-24">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 sm:mb-6">
           <span className="text-primary">전문 공인중개사</span>와 함께하는 안전한 거래
         </h2>
-        <p className="text-xl text-muted-foreground mb-12">
+        <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-8 sm:mb-12">
           처음부터 끝까지 전문가가 함께합니다
         </p>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-card rounded-2xl p-8 hover-lift border border-border"
+              className="bg-card rounded-xl sm:rounded-2xl p-6 sm:p-8 hover-lift border border-border"
             >
-              <service.icon className="w-16 h-16 text-primary mx-auto mb-6" />
-              <h3 className="text-xl font-bold text-foreground mb-4">
+              <service.icon className="w-12 h-12 sm:w-16 sm:h-16 text-primary mx-auto mb-4 sm:mb-6" />
+              <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3 sm:mb-4">
                 {service.title}
               </h3>
-              <p className="text-muted-foreground">
+              <p className="text-sm sm:text-base text-muted-foreground">
                 {service.description}
               </p>
             </div>
           ))}
         </div>
         
-        <div className="mt-12 bg-white rounded-2xl p-6 border border-primary/20">
-          <p className="text-muted-foreground mb-4">
+        <div className="mt-8 sm:mt-12 bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-primary/20">
+          <p className="text-sm sm:text-base text-muted-foreground mb-3 sm:mb-4">
             🏆 검증된 전문가와 함께하는 안전한 부동산 거래
           </p>
-          <div className="grid md:grid-cols-3 gap-4 text-sm">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 text-xs sm:text-sm">
             <div className="flex items-center justify-center space-x-2">
               <span className="text-primary">✓</span>
               <span>현장 방문 검증</span>
