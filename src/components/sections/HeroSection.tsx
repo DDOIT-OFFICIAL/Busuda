@@ -16,7 +16,7 @@ const HeroSection = ({ scrollToCalculator }: HeroSectionProps) => {
   const handleScrollToCalculator = scrollToCalculator || defaultScrollToCalculator;
 
   return (
-    <section className="h-full flex items-start md:items-start lg:items-center justify-center bg-background px-4 pt-8 pb-32 sm:pt-8 sm:pb-32 md:pt-8 md:pb-32 lg:pt-0 lg:pb-0">
+    <section className="h-full flex items-start md:items-start lg:items-center justify-center bg-background px-4 pt-8 pb-24 lg:pt-0 lg:pb-0">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-8 sm:mb-12">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground mb-4 sm:mb-6 fade-in-up">
